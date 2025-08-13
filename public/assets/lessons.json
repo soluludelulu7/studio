@@ -1,0 +1,491 @@
+
+[
+  {
+    "id": 1,
+    "title": "Intro to Python",
+    "objective": "Understand what Python is and how it’s used.",
+    "explanation": "Python is a popular, high-level programming language known for its simple, readable syntax. It's used for web development, data science, automation, and much more. Your first step in any language is often to print a message to the screen. In Python, we use the `print()` function.",
+    "examples": [
+      {
+        "code": "print(\"Hello, World!\")"
+      }
+    ],
+    "activity": {
+      "description": "Write the Python code to display the message “Hello, World!” in the console.",
+      "placeholderCode": "# Your code here",
+      "expectedOutput": "Hello, World!\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "Which function is used to display text on the screen?",
+          "options": ["display()", "echo()", "print()", "show()"],
+          "answer": "print()"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Variables & Data Types",
+    "objective": "Learn about integer, float, string, and boolean data types.",
+    "explanation": "Variables are containers for storing data values. Python has various data types, including `int` (integers), `float` (decimal numbers), `str` (strings/text), and `bool` (True/False).",
+    "examples": [
+      { "code": "name = \"Alex\"\nage = 25\nheight = 5.9\nis_student = True" }
+    ],
+    "activity": {
+      "description": "Create a variable called `name` to store your name and a variable `age` to store your age. Then, print both variables.",
+      "placeholderCode": "# Store your name\nname = \"Your Name\"\n\n# Store your age\nage = 20\n\n# Print the variables\nprint(name)\nprint(age)",
+      "expectedOutput": "Your Name\n20\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What data type is `10.5`?",
+          "options": ["int", "float", "str", "bool"],
+          "answer": "float"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Basic Math",
+    "objective": "Learn addition, subtraction, multiplication, and division.",
+    "explanation": "Python can be used as a powerful calculator. It supports all basic arithmetic operators.",
+    "examples": [
+      { "code": "sum = 5 + 3\ndifference = 10 - 4\nproduct = 6 * 7\nquotient = 20 / 5" }
+    ],
+    "activity": {
+      "description": "Calculate the result of `(15 + 5) * 2 / 4` and print it.",
+      "placeholderCode": "# Your calculation here",
+      "expectedOutput": "10\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What is the result of `2 * 3` in Python?",
+          "options": ["5", "6", "8", "23"],
+          "answer": "6"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "String Operations",
+    "objective": "Learn concatenation, `len()`, and basic string methods.",
+    "explanation": "Strings are sequences of characters. You can combine them (concatenate), find their length, and use built-in methods to manipulate them.",
+    "examples": [
+      { "code": "first_name = \"John\"\nlast_name = \"Doe\"\nfull_name = first_name + \" \" + last_name\nprint(len(full_name)) # 8" }
+    ],
+    "activity": {
+      "description": "Combine the strings 'Py' and 'thon' and print the result.",
+      "placeholderCode": "part1 = \"Py\"\npart2 = \"thon\"\n# Combine and print",
+      "expectedOutput": "Python\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What does `len(\"code\")` return?",
+          "options": ["3", "4", "5", "error"],
+          "answer": "4"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "User Input",
+    "objective": "Learn to use `input()` to get information from the user.",
+    "explanation": "The `input()` function allows your program to be interactive by pausing and waiting for the user to type something.",
+    "examples": [
+      { "code": "name = input(\"What is your name? \")\nprint(\"Hello, \" + name)" }
+    ],
+    "activity": {
+      "description": "Ask the user for their favorite color and print 'Your favorite color is [color]'.",
+      "placeholderCode": "# Ask for user's favorite color",
+      "expectedOutput": "Your favorite color is blue\n",
+      "inputs": ["blue"]
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "Which function gets user input?",
+          "options": ["get_input()", "user_input()", "read()", "input()"],
+          "answer": "input()"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "title": "Conditionals",
+    "objective": "Learn to use `if`, `elif`, and `else` statements.",
+    "explanation": "Conditional statements allow your code to make decisions and execute different blocks of code based on whether a condition is true or false.",
+    "examples": [
+      { "code": "age = 18\nif age >= 18:\n  print(\"You are an adult.\")\nelse:\n  print(\"You are a minor.\")" }
+    ],
+    "activity": {
+      "description": "Write a program that prints 'Positive' if a number is greater than 0, and 'Not positive' otherwise. Use `number = 10`.",
+      "placeholderCode": "number = 10\n# Your if/else statement here",
+      "expectedOutput": "Positive\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What keyword is used for a secondary condition check after `if`?",
+          "options": ["elseif", "or if", "elif", "else"],
+          "answer": "elif"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "title": "Logical Operators",
+    "objective": "Learn to use `and`, `or`, and `not`.",
+    "explanation": "Logical operators are used to combine conditional statements.",
+    "examples": [
+      { "code": "age = 25\nhas_license = True\nif age >= 18 and has_license:\n  print(\"You can drive.\")" }
+    ],
+    "activity": {
+      "description": "Check if `x > 5` and `y < 15` and print the boolean result. Use `x = 10` and `y = 10`.",
+      "placeholderCode": "x = 10\ny = 10\n# Your code here",
+      "expectedOutput": "True\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What is the result of `True and False`?",
+          "options": ["True", "False", "Maybe", "Error"],
+          "answer": "False"
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "title": "For Loops",
+    "objective": "Learn to iterate over sequences like lists and ranges.",
+    "explanation": "A `for` loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).",
+    "examples": [
+      { "code": "for i in range(5):\n  print(i) # Prints 0, 1, 2, 3, 4" }
+    ],
+    "activity": {
+      "description": "Use a `for` loop to print the numbers from 1 to 3.",
+      "placeholderCode": "# Your for loop here",
+      "expectedOutput": "1\n2\n3\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What does `range(3)` generate?",
+          "options": ["1, 2, 3", "0, 1, 2", "0, 1, 2, 3", "1, 2"],
+          "answer": "0, 1, 2"
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "title": "While Loops",
+    "objective": "Learn how to loop as long as a condition is true.",
+    "explanation": "With the `while` loop, we can execute a set of statements as long as a condition is true. It's useful when you don't know how many times you need to loop.",
+    "examples": [
+      { "code": "count = 0\nwhile count < 3:\n  print(count)\n  count = count + 1" }
+    ],
+    "activity": {
+      "description": "Use a `while` loop to print numbers from 5 down to 1.",
+      "placeholderCode": "i = 5\n# Your while loop here",
+      "expectedOutput": "5\n4\n3\n2\n1\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What could cause a `while` loop to run forever?",
+          "options": ["The condition is always false", "The condition is always true", "Using `break`", "Using `continue`"],
+          "answer": "The condition is always true"
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "title": "Lists",
+    "objective": "Learn list creation, indexing, and basic methods.",
+    "explanation": "A list is a collection which is ordered and changeable. In Python, lists are written with square brackets.",
+    "examples": [
+      { "code": "fruits = [\"apple\", \"banana\", \"cherry\"]\nprint(fruits[1]) # banana\nfruits.append(\"orange\")" }
+    ],
+    "activity": {
+      "description": "Create a list of your three favorite numbers and print the second element.",
+      "placeholderCode": "numbers = [10, 20, 30]\n# Print the second number",
+      "expectedOutput": "20\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "How do you add an item to the end of a list called `my_list`?",
+          "options": ["my_list.add(\"item\")", "my_list.push(\"item\")", "my_list.append(\"item\")", "my_list.insert(\"item\")"],
+          "answer": "my_list.append(\"item\")"
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "title": "Dictionaries",
+    "objective": "Understand and use key-value pairs.",
+    "explanation": "A dictionary is a collection which is unordered, changeable and indexed. In Python, dictionaries are written with curly brackets, and they have keys and values.",
+    "examples": [
+      { "code": "person = {\"name\": \"Alice\", \"age\": 30}\nprint(person[\"name\"]) # Alice" }
+    ],
+    "activity": {
+      "description": "Create a dictionary for a car with keys 'brand' and 'year'. Print the brand.",
+      "placeholderCode": "car = {\n  \"brand\": \"Tesla\",\n  \"year\": 2024\n}\n# Print the brand",
+      "expectedOutput": "Tesla\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "How do you get the value associated with the key 'city' in a dictionary named `contact`?",
+          "options": ["contact.get('city')", "contact('city')", "contact.city", "contact['city']"],
+          "answer": "contact['city']"
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "title": "Functions",
+    "objective": "Learn to define and call functions with `def`.",
+    "explanation": "A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.",
+    "examples": [
+      { "code": "def my_function():\n  print(\"Hello from a function\")\n\nmy_function()" }
+    ],
+    "activity": {
+      "description": "Create a function called `say_hello` that prints 'Hi there!'. Then call the function.",
+      "placeholderCode": "# Define your function here\n\n# Call your function here",
+      "expectedOutput": "Hi there!\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What keyword is used to define a function in Python?",
+          "options": ["function", "def", "fun", "define"],
+          "answer": "def"
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "title": "Function Arguments",
+    "objective": "Learn to pass arguments to functions and use `return`.",
+    "explanation": "Information can be passed into functions as arguments. Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma. The `return` statement is used to exit a function and return a value.",
+    "examples": [
+      { "code": "def greet(name):\n  return \"Hello, \" + name\n\nmessage = greet(\"World\")\nprint(message)" }
+    ],
+    "activity": {
+      "description": "Create a function `add` that takes two numbers as arguments and returns their sum. Call it with 5 and 3, and print the result.",
+      "placeholderCode": "# Define the add function\n\n# Call it and print the result",
+      "expectedOutput": "8\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What does the `return` keyword do?",
+          "options": ["Prints a value", "Stops the script", "Exits a function and sends back a value", "Restarts a function"],
+          "answer": "Exits a function and sends back a value"
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "title": "Importing Modules",
+    "objective": "Learn to import and use Python's built-in modules.",
+    "explanation": "Python has a lot of built-in modules that you can use. A module is a file containing Python code. To use a module, you must first import it using the `import` statement.",
+    "examples": [
+      { "code": "import math\n\nprint(math.sqrt(16)) # 4.0" }
+    ],
+    "activity": {
+      "description": "Import the `random` module and use `random.randint(1, 10)` to print a random number between 1 and 10. The output will be random, so we'll just check if the code runs.",
+      "placeholderCode": "# Import the random module\n\n# Print a random integer",
+      "expectedOutput": "A random number between 1 and 10",
+      "isCommentOnly": true
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "How do you import the `math` module?",
+          "options": ["include math", "import math", "using math", "require math"],
+          "answer": "import math"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "title": "Error Handling",
+    "objective": "Learn to handle errors gracefully with `try...except`.",
+    "explanation": "The `try` block lets you test a block of code for errors. The `except` block lets you handle the error. This prevents your program from crashing if an error occurs.",
+    "examples": [
+      { "code": "try:\n  print(10 / 0)\nexcept ZeroDivisionError:\n  print(\"You can't divide by zero!\")" }
+    ],
+    "activity": {
+      "description": "Write a `try...except` block to handle an attempt to access an invalid list index. Print a friendly message in the `except` block.",
+      "placeholderCode": "my_list = [1, 2, 3]\ntry:\n  print(my_list[5])\nexcept:\n  # Your print statement here",
+      "expectedOutput": "Index out of range!\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "Which block of code is executed if an error occurs in the `try` block?",
+          "options": ["except", "finally", "else", "catch"],
+          "answer": "except"
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "title": "File Handling",
+    "objective": "Learn to read from and write to text files.",
+    "explanation": "Python has several functions for creating, reading, updating, and deleting files. The `open()` function is the key. It takes two parameters: filename and mode ('r' for read, 'w' for write, 'a' for append).",
+    "examples": [
+      { "code": "# This code cannot be run in this playground\n# but is for demonstration.\n# f = open(\"demofile.txt\", \"w\")\n# f.write(\"Hello, File!\")\n# f.close()" }
+    ],
+    "activity": {
+      "description": "Since we can't write real files here, this is a conceptual exercise. Imagine you have a file open. Which line of code would you use to write 'My Text' to it? Write just that line.",
+      "placeholderCode": "# Assume 'f' is your file object.\n# f = open(\"myfile.txt\", \"w\")",
+      "expectedOutput": "f.write(\"My Text\")\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What does the 'w' mode stand for when opening a file?",
+          "options": ["wait", "warn", "write", "width"],
+          "answer": "write"
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "title": "List Comprehensions",
+    "objective": "Learn a shorter syntax for creating lists.",
+    "explanation": "List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.",
+    "examples": [
+      { "code": "squares = [x*x for x in range(5)]\n# squares is now [0, 1, 4, 9, 16]" }
+    ],
+    "activity": {
+      "description": "Use a list comprehension to create a list of the first 5 even numbers (starting from 0). Print the list.",
+      "placeholderCode": "# Your list comprehension here",
+      "expectedOutput": "[0, 2, 4, 6, 8]\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "What is the primary benefit of list comprehensions?",
+          "options": ["They are faster", "They are more readable and concise", "They can do more than loops", "They use less memory"],
+          "answer": "They are more readable and concise"
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "title": "Intro to OOP",
+    "objective": "Learn the basics of classes and objects.",
+    "explanation": "Object-Oriented Programming (OOP) is a method of structuring a program by bundling related properties and behaviors into individual objects. A `class` is like a blueprint for creating objects.",
+    "examples": [
+      { "code": "class Dog:\n  def __init__(self, name):\n    self.name = name\n\nmy_dog = Dog(\"Fido\")\nprint(my_dog.name)" }
+    ],
+    "activity": {
+      "description": "Create a `Person` class with a `name` attribute. Create an object of this class for a person named 'Sam' and print their name.",
+      "placeholderCode": "# Define the Person class\n\n# Create an object and print the name",
+      "expectedOutput": "Sam\n"
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "In OOP, what is a 'blueprint' for an object called?",
+          "options": ["function", "variable", "class", "module"],
+          "answer": "class"
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "title": "Simple Project",
+    "objective": "Combine your skills to build a number guessing game.",
+    "explanation": "It's time to put everything together! We will build a simple number guessing game. This will use variables, loops, conditionals, and user input.",
+    "examples": [
+      { "code": "# This is a larger project.\n# We will guide you through the activity." }
+    ],
+    "activity": {
+      "description": "Write a program where the computer has a secret number (e.g., 7), and the user has to guess it. Provide feedback like 'Too high' or 'Too low'. The user input will be '5', then '8', then '7'.",
+      "placeholderCode": "secret_number = 7\n# Your game logic here",
+      "expectedOutput": "Too low\nToo high\nYou guessed it!\n",
+      "inputs": ["5", "8", "7"]
+    },
+    "quiz": {
+      "questions": [
+        {
+          "question": "Which concept is essential for checking if the user's guess is correct?",
+          "options": ["Functions", "Lists", "Conditionals (if/else)", "File Handling"],
+          "answer": "Conditionals (if/else)"
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "title": "Final Challenge",
+    "objective": "Apply all your knowledge in a final quiz.",
+    "explanation": "Congratulations on making it to the final challenge! This lesson is a comprehensive quiz that covers topics from all the previous lessons. It's a great way to review and solidify your understanding of Python basics. Take your time and good luck!",
+    "examples": [],
+    "activity": null,
+    "quiz": {
+      "questions": [
+        {
+          "question": "What is the correct way to assign the integer 5 to a variable named `x`?",
+          "options": ["x = 5", "x == 5", "let x = 5", "x := 5"],
+          "answer": "x = 5"
+        },
+        {
+          "question": "Which of these will result in a boolean `False` value?",
+          "options": ["5 > 3", "10 == 10", "True or False", "True and False"],
+          "answer": "True and False"
+        },
+        {
+          "question": "How would you get the first item from a list called `items`?",
+          "options": ["items(0)", "items[0]", "items.first()", "items[1]"],
+          "answer": "items[0]"
+        },
+        {
+          "question": "What keyword is used to start a loop that iterates over a list?",
+          "options": ["while", "loop", "for", "iterate"],
+          "answer": "for"
+        },
+        {
+          "question": "What is the purpose of the `def` keyword?",
+          "options": ["To define a variable", "To delete a file", "To define a function", "To import a module"],
+          "answer": "To define a function"
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "title": "Course Complete!",
+    "objective": "Claim your certificate and see what's next.",
+    "explanation": "You have completed all the lessons in CodeStart20! This is a huge achievement. You've learned the fundamentals of Python, from printing 'Hello, World!' to understanding classes and objects. Programming is a journey of continuous learning. Keep practicing, build your own projects, and explore more advanced topics. Click the button below to get your certificate!",
+    "examples": [],
+    "activity": null,
+    "quiz": null
+  }
+]
