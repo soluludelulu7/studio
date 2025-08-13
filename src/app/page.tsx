@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import { useProgress, BADGES } from '@/hooks/use-progress';
-import { PythonLogo } from '@/components/icons/python-logo';
 import { ArrowRight, Coins, Map } from 'lucide-react';
 import { TOTAL_LESSONS } from '@/lib/constants';
 import { Skeleton } from '@/components/ui/skeleton';
@@ -71,7 +70,7 @@ export default function HomePage() {
     <main className="min-h-screen flex items-center justify-center p-4 bg-grid-pattern">
       <div className="container max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div className="text-center md:text-left">
-          <PythonLogo className="w-24 h-24 mx-auto md:mx-0 mb-4" />
+          
           {renderContent()}
         </div>
         

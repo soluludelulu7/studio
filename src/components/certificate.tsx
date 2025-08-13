@@ -4,7 +4,6 @@
 import { useRef, useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
-import { PythonLogo } from './icons/python-logo';
 import { downloadSvg } from '@/lib/utils';
 import { Award, Download } from 'lucide-react';
 import Link from 'next/link';
@@ -57,7 +56,7 @@ export function Certificate() {
             course.
           </text>
 
-          <PythonLogo x="360" y="480" width="80" height="80" />
+          
         </svg>
       </div>
 
